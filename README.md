@@ -1,4 +1,4 @@
-# Stock-Binary-Classification-LSTM
+# Binary classification on stock data using an LSTM
  Uses an LSTM to predict the next days stock movement based on sequence of previous days.  I used this project to gain expierience working with LSTM's and time series data.
  
  ![sp500](https://github.com/dgleaso/Stock-Binary-Classification-LSTM/blob/main/images/sp500-historical.png) ![cm-train](https://github.com/dgleaso/Stock-Binary-Classification-LSTM/blob/main/images/cm_train.png)
