@@ -1,5 +1,5 @@
 # Binary classification on stock data using an LSTM
- Uses an LSTM to predict the next days stock movement based on sequence of previous days.  I used this project to gain expierience working with LSTM's and time series data.
+ Uses an LSTM to predict the next days stock movement based on sequence of previous days.  I used this project to gain experience working with LSTM's and time series data.
  
  ![sp500](https://github.com/dgleaso/Stock-Binary-Classification-LSTM/blob/main/images/sp500-historical.png) ![cm-train](https://github.com/dgleaso/Stock-Binary-Classification-LSTM/blob/main/images/cm_train.png)
 
@@ -9,4 +9,4 @@ The python code here trains an LSTM, a type of recurrent neural network suited f
 
 ![sp500](https://github.com/dgleaso/Stock-Binary-Classification-LSTM/blob/main/images/acc_train.png) ![cm-train](https://github.com/dgleaso/Stock-Binary-Classification-LSTM/blob/main/images/acc_test.png)
 
-As you can see in the above figures, the LSTM learns to classify quite well on the training data, however it does not generalize well to the testing data.  One problem is that the dataset is unbalanced as there are sigificantly more days where the stock price goes down rather than up.  In training, I used PyTorch's Binary cross entropy loss pos_weight parameter to counteract this, by increasing the weight assigned to positive datapoints proportionately to the unbalance in the dataset.  This allowed it to learn well on the training data, however it still struggles on the unseen testing data.  Perhaps more methods of regularization, such as dropout, would improve the generalizability of the model.
+As you can see in the above figures, the LSTM learns to classify quite well on the training data, however it does not generalize well to the testing data.  One problem is that the dataset is unbalanced as there are significantly more days where the stock price goes down rather than up.  In training, I used PyTorch's Binary cross entropy loss pos_weight parameter to counteract this, by increasing the weight assigned to positive datapoints proportionately to the unbalance in the dataset.  This allowed it to learn well on the training data, however it still struggles on the unseen testing data.  Perhaps more methods of regularization, such as dropout, would improve the generalizability of the model.
